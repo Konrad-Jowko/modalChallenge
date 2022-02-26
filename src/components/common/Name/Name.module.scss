@@ -1,0 +1,26 @@
+@import '../../../styles/global.scss';
+
+.container {
+  font-family: $main-font;
+  margin: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+
+  .title {
+    width: 120px;
+    font-weight: $font-weight;
+  }
+
+  .content {
+    flex: 4;
+    border-radius: 0;
+    padding: 10px;
+    border: 2px solid rgba(200, 200, 200, 1);
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

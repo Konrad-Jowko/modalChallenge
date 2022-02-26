@@ -1,0 +1,52 @@
+@import '../../../styles/global.scss';
+
+.container {
+  font-family: $main-font;
+  height: 100%;
+  border-top: 2px solid rgba(170, 170, 170, 1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  .buttonsBox {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    [class*="Button"] {
+      width: 100px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .hollowButton {
+      border: 2px solid rgba(170, 170, 170, 1);
+      color: rgba(140, 140, 140, 1);
+
+      &:active {
+        color: white;
+        background: rgba(60, 60, 60, 1);
+        border: none;
+      }
+    }
+
+    .fullButton {
+      color: white;
+      background: rgba(60, 60, 60, 1);
+
+      &:active {
+        background: white;
+        border: 2px solid rgba(170, 170, 170, 1);
+        color: rgba(140, 140, 140, 1);
+      }
+    }
+  }
+}

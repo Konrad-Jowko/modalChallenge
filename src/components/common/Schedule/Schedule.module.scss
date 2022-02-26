@@ -1,0 +1,31 @@
+@import '../../../styles/global.scss';
+
+.container {
+  z-index: 0;
+  font-family: $main-font;
+  margin: 0 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  .title {
+    font-weight: $font-weight;
+    width: 120px;
+  }
+
+  .radioContainer {
+    z-index: 0;
+    margin-right: 5px;
+
+    input, label {
+      z-index: 10;
+      margin-right: 5px;
+    }
+
+    input {
+      height: 15px;
+      width: 15px;
+    }
+  }
+}

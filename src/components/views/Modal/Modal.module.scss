@@ -1,0 +1,38 @@
+@import '../../../styles/global.scss';
+
+.container {
+  @include noSelect;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $main-font;
+  font-weight: $font-weight;
+
+  .modalBox {
+    position: relative;
+    height: 420px;
+    width: 650px;
+    border: 1px solid rgba(200, 200, 200, 1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .modalTitle {
+      background: rgba(240, 240, 240, 1);
+      margin: 0;
+      padding: 15px;
+      font-weight: $font-weight;
+      font-size: 15px;
+    }
+
+    .optionContainer {
+      margin: 0 20px 10px 20px;
+      min-height: 50px;
+    }
+  }
+}

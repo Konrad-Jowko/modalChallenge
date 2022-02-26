@@ -1,0 +1,25 @@
+@import '../../../styles/global.scss';
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: $main-font;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 10px;
+  height: 40px;
+  width: 250px;
+  background: white;
+  font-size: 15px;
+  border: 2px solid green;
+
+  .title {
+    padding: 0;
+    font-weight: $font-weight;
+    width: 100%;
+    text-align: center;
+    color: green;
+  }
+}
